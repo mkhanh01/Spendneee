@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    tools:context=".fragment.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragment_home_cv_amount_total"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_home_tv_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="amount"
+                    android:textSize="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/usd_đ"
+                    android:textSize="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_home_cv_amount_total"
+            android:layout_marginStart="20dp"
+            android:text="@string/total_balance"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_rabbit"
+            android:drawableEnd="@drawable/ic_rabbit"/>
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/total"
+            android:layout_marginStart="20dp"
+            android:text="@string/report_chart"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_bar_chart"
+            android:drawableEnd="@drawable/ic_bar_chart"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fragment_home_cv_chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/report"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/fragment_home_pc_chart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/recent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fragment_home_cv_chart"
+            android:layout_marginStart="20dp"
+            android:text="@string/recent_trans"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_timeline"
+            android:drawableEnd="@drawable/ic_timeline"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="100dp"
+            android:layout_below="@+id/recent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_home_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    tools:listitem="@layout/item_transaction" />
+
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

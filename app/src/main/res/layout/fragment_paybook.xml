@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_paybook_linear1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    android:orientation="vertical"
+    tools:context=".fragment.PaybookFragment">
+    <LinearLayout
+        android:id="@+id/fragment_paybook_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/fragment_paybook_tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_black_back"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/fragment_paybook_tv_paybook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/paybook"
+
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/fragment_paybook_tab_layout"
+                android:layout_width="match_parent"
+                android:background="@color/gray_200"
+                android:layout_height="wrap_content"
+                app:tabMode="scrollable"
+                android:layout_below="@+id/fragment_paybook_tv_paybook"
+                app:tabTextColor="@color/black">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/need_to_pay" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/need_to_collect" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <ImageView
+                android:id="@+id/fragment_paybook_iv_empty_box"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_empty_box"
+                android:layout_marginTop="250dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dont_have_trans"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/fragment_paybook_iv_empty_box"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fragment_paybook_fab_add_paybook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ic_add_white" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

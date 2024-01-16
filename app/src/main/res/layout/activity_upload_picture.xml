@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_200"
+    tools:context=".activity.UploadPictureActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/activity_upload_picture_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_black_back"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_file"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:layout_marginEnd="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_upload_picture_rl_choose_picture"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_upload_file">
+
+        <ImageView
+            android:id="@+id/activity_upload_picture_img_choose"
+            android:layout_width="345dp"
+            android:layout_height="295dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bgr_img"
+            android:src="@drawable/images" />
+
+        <TextView
+            android:id="@+id/activity_upload_picture_tv_choose_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/activity_upload_picture_img_choose"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="259dp"
+            android:layout_marginBottom="19dp"
+            android:text="@string/choose_picture"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_upload_picture_btn_update"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

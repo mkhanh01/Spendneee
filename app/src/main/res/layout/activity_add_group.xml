@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_add_group_linear_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/activity_add_group_linear_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/activity_add_group_iv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/ic_clear" />
+
+            <LinearLayout
+                android:id="@+id/layoutVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/activity_add_group_btn_income"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/custom_button"
+                    android:text="Income"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/activity_add_group_btn_expense"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/custom_btn"
+                    android:text="Expense"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/activity_add_group_til_amount"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="340dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:hint="@string/enter_the_amount"
+                android:textColorHint="@color/teal_900"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                app:boxStrokeWidth="2dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_add_group_et_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:paddingLeft="20dp"
+                    android:inputType="numberSigned"
+                    android:textColor="@color/teal_900" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/activity_add_group_iv_category"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_question"
+                    android:layout_marginEnd="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_add_group_til_category"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="85dp"
+                    android:hint="@string/select_category"
+                    android:textColorHint="@color/teal_900"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeWidth="2dp"
+                    android:focusable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_add_group_et_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:paddingLeft="30dp"
+                        android:focusable="false"
+                        android:textColor="@color/teal_900" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_date"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/activity_add_group_iv_date"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_marginEnd="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_add_group_til_date"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="85dp"
+                    android:hint="@string/select_date"
+                    android:textColorHint="@color/teal_900"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeWidth="2dp"
+                    android:focusable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_add_group_et_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="@color/teal_900"
+                        android:focusable="false"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/activity_add_group_iv_account"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_wallet"
+                    android:layout_marginEnd="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_add_group_til_account"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="85dp"
+                    android:hint="@string/select_account"
+                    android:textColorHint="@color/teal_900"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeWidth="2dp"
+                    android:focusable="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_add_group_et_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="@color/teal_900"
+                        android:focusable="false"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/activity_add_group_iv_note"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_pencil"
+                    android:layout_marginEnd="20dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/activity_add_group_til_note"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="280dp"
+                    android:layout_height="85dp"
+                    android:hint="@string/note"
+                    android:textColorHint="@color/teal_900"
+                    app:boxCornerRadiusBottomEnd="25dp"
+                    app:boxCornerRadiusBottomStart="25dp"
+                    app:boxCornerRadiusTopEnd="25dp"
+                    app:boxCornerRadiusTopStart="25dp"
+                    app:boxStrokeWidth="2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/activity_add_group_et_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:paddingLeft="30dp"
+                        android:textColor="@color/teal_900" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/activity_add_group_tv_see_more"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginBottom="30dp"-->
+<!--                android:text="See more..."-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="italic" />-->
+
+            <LinearLayout
+                android:id="@+id/activity_add_group_ll_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/activity_add_group_iv_group"
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_group_add" />
+
+                <TextView
+                    android:id="@+id/activity_add_group_tv_member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/click_to_see_all_member"
+                    android:textColor="@color/teal_200"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/activity_add_group_btn_save"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@color/black"
+                android:text="@string/save_trans"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.BudgetFragment">
+
+    <TextView
+        android:id="@+id/fragment_budget_tv_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/budget"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fragment_budget_tab_layout"
+        android:layout_width="match_parent"
+        android:background="@color/gray_200"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/fragment_budget_tv_budget"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/being_applying_budget" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/budget_applied" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <ImageView
+        android:id="@+id/fragment_budget_iv_empty_box"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_empty_box"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/fragment_budget_tv_do_not_have_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_have_budget"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fragment_budget_iv_empty_box"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fragment_budget_fab_create_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_button"
+        android:textSize="20dp"
+        android:src="@drawable/ic_add_white"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_budget_tab_layout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fragment_budget_recycle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            tools:listitem="@layout/item_budget" />
+
+    </ScrollView>
+
+</RelativeLayout>

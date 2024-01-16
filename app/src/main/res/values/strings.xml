@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Spendnee</string>
+    <string name="group">Group</string>
+    <string name="account">Account</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="home">Home</string>
+    <string name="budget">Budget</string>
+    <string name="password">Password</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="transaction_book">Transaction book</string>
+    <string name="logout">Logout</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="create_an_account">Create an account? Signup</string>
+    <string name="username">Username</string>
+    <string name="skip">SKIP</string>
+    <string name="have_an_account">Already have an account? Login</string>
+    <string name="get_code">Get Code</string>
+    <string name="verification">Verification</string>
+    <string name="require" translatable="false">Require</string>
+    <string name="special_character" translatable="false">[a-zA-Z]+</string>
+    <string name="is_number" translatable="false">[\\d+]</string>
+    <string name="number_error">The code is the number.</string>
+    <string name="username_special_character">The username cannot contain special characters.</string>
+    <string name="email_pattern" translatable="false">[a-zA-Z][\\w-]+@([\\w]+\\.[\\w]+|[\\w]+\\.[\\w]{2,}\\.[\\w]{2,})</string>
+
+    <string name="format_error">Format Error</string>
+    <string name="compare_password_require">Passwords are not match</string>
+    <string name="code_error">Code error</string>
+    <string name="login_successfully">Logged in successfully</string>
+    <string name="signup_successfully">Signed up successfully</string>
+    <string name="login_unsuccessful">Login unsuccessful</string>
+    <string name="signup_unsuccessful">Sign up unsuccessful</string>
+    <string name="username_not_exist">User does not exist</string>
+    <string name="format_password">Your passwork is too weak. Kindly use a mix of alphabets, number, special character and the length of the password must be more than or equal to 6 characters.</string>
+    <string name="exist_email">User is already sign up with this email . Kindly use another email.</string>
+    <string name="not_exist_email">User does not exists or is no longer valid. Please login again.</string>
+    <string name="email_server1" translatable="false">myspendnee@gmail.com</string>
+    <string name="password_email_server2" translatable="false">Myspendnee@@1</string>
+    <string name="password_email_server1" translatable="false">cwoaqfrumgvhqnsz</string>
+    <string name="email_server" translatable="false">imiusg@gmail.com</string>
+    <string name="password_email_server" translatable="false">cwoaqfrumgvhqnsz</string>
+    <string name="check_code">Please check the Code in your Email</string>
+    <string name="subject_email">Confirmation code from SPENDNEE</string>
+    <string name="content_email">"Spendnee sent you an OTP for email verification: "</string>
+    <string name="hello_email">Hello you,</string>
+    <string name="end_email">Thank you!</string>
+    <string name="email_not_match">The email is not match!</string>
+    <string name="continue_continue">Continue</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="update">Update</string>
+    <string name="please_check_email">Please, check your email to change your password!</string>
+    <string name="error">A few errors that occurred!!!</string>
+    <string name="invalid_email">Your email is invalid or already in use. Kindly use another email.</string>
+    <string name="invalid_credential">Invalid credential. Kindly check and re-enter.</string>
+    <string name="paybook">Paybook</string>
+    <string name="choose_picture">Choose your picture</string>
+    <string name="upload_file">Upload file</string>
+    <string name="email_not_verified">Email is not verified</string>
+    <string name="pls_verify_email">Please, Verify your email now. You can not login without email verification.</string>
+
+
+    <string name="dd_mm_yyyy" translatable="false">dd-mm_yyyy</string>
+    <string name="select_date">Select the date</string>
+    <string name="enter_the_amount">Enter the amount</string>
+    <string name="select_category">Select the category</string>
+    <string name="note">Note</string>
+    <string name="save_trans">Save transaction</string>
+    <string name="with_somebody_else">With somebody else...</string>
+    <string name="food">Food</string>
+    <string name="furniture">Furniture</string>
+    <string name="education">Education</string>
+    <string name="houseware">Houseware</string>
+    <string name="pet">Pet</string>
+    <string name="health">Health</string>
+    <string name="insurance">Insurance</string>
+    <string name="other">"Other "</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="total">Total</string>
+    <string name="select_account">Select the account</string>
+    <string name="cash">Cash</string>
+    <string name="credit">Credit</string>
+    <string name="bank_card">Bank card</string>
+    <string name="momo" translatable="false">MoMo</string>
+    <string name="username_exist">The username is already exists</string>
+    <string name="progressbar_tittle">Please wait !!</string>
+    <string name="progressbar_login">Loging in...</string>
+    <string name="progressbar_signup">Signing up...</string>
+    <string name="update_successfully">Update successfully</string>
+    <string name="update_unsuccessfully">Update unsuccessfully</string>
+    <string name="title_dialog">Confirm</string>
+    <string name="dialog_logout">Are you sure you wanna logout?</string>
+    <string name="yes_dialog">Yes</string>
+
+    <string name="enter_new_name_for_your_group">Enter new name for your group</string>
+
+    <string name="check_update" translatable="false">checkUpdate</string>
+    <string name="nameGroup" translatable="false">nameGroup</string>
+    <string name="insert" translatable="false">insert</string>
+
+    <string name="member" translatable="false">member</string>
+    <string name="creator" translatable="false">creator</string>
+
+
+    <string name="id_transaction" translatable="false">id transaction</string>
+    <string name="id_budget" translatable="false">id budget</string>
+    <string name="no_dialog">No</string>
+    <string name="signup_with_email">Sign up with Email</string>
+    <string name="add_trans_successfully">Added successful transaction</string>
+    <string name="add_trans_unsuccessfully">Added unsuccessful transaction</string>
+
+    <string name="add_budget_successfully">Added successful budget</string>
+    <string name="add_budget_unsuccessfully">Added unsuccessful budget</string>
+    <string name="usd_đ">$</string>
+    <string name="deleted_successfully">Deleted successfully</string>
+    <string name="deleted_unsuccessfully">Deleted unsuccessfully</string>
+    <string name="delete_message">Are you sure you want to delete?</string>
+    <string name="update_successful">Update successful!!</string>
+    <string name="update_unsuccessful">Update_unsuccessful!!</string>
+    <string name="being_applying_budget">Being applying</string>
+    <string name="budget_applied">Applied</string>
+    <string name="create_budget">Create a new budget ?</string>
+    <string name="dont_have_budget">You don\'t have a budget yet.</string>
+    <string name="receipt">Receipt</string>
+    <string name="create_widget">Create a widget</string>>
+    <string name="dont_have_trans">You don\'t have transaction</string>
+    <string name="need_to_pay">Need to pay</string>
+    <string name="need_to_collect">Need to collect</string>
+    <string name="app_widget_description">app widget description</string>
+    <string name="enter_name_group">Enter group name</string>
+    <string name="group_name">Group name</string>
+    <string name="click_to_see_all_member">Click to see all member</string>
+    <string name="add_group">Add a group</string>
+    <string name="add_trans">Add a transaction</string>
+    <string name="exists">Exists</string>
+    <string name="individual">Individual</string>
+    <string name="appwidget_text" translatable="false">EXAMPLE</string>
+    <string name="add_widget" translatable="false">Add widget</string>
+    <string name="add_member">Add member</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="report_chart">Expense report</string>
+    <string name="recent_trans">Recent transactions</string>
+
+
+</resources>
